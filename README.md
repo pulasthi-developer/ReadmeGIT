@@ -21,12 +21,6 @@ This project aims to track and display the real-time locations of trains across 
 ## System Architecture
 We used MVC architecture for this API-based Real-Time Train Tracking System project. MVC is short for Model, View, and Controller.
 
-* **Model** - Represents the data. It directly manages the data in this application.
-
-* **View** - The user interface, which provides the user with data from the Model and relays user inputs back to the Controller.
-
-* **Controller** - Handles input from the View, processes it and interacting with the Model
-
 ##### Models:
 * locationModel.js - Location history data collection(table) model handlings JS file
 * realLocationModel.js - Real-time Location data collection(table) model handlings JS file
