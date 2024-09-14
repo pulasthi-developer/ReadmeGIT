@@ -36,3 +36,16 @@ We used MVC architecture for this API-based Real-Time Train Tracking System proj
 * trainRouteModel.js - Train route data collection(table) model handlings JS file
 
 ##### Controller:
+* locationController.js - Interacts with `locationModel.js` to handle requests related to location history and real-time location data.
+* realLocationController.js - Interacts with `realLocationModel.js` to handle requests related real-time location data.
+* scheduleController.js - Interacts with `scheduleModel.js` to handle requests related to train schedule data.
+* stationController.js - Interacts with `stationModel.js` to handle requests related to train station data.
+* trainController.js - Interacts with `trainModel.js` to handle requests related to train data.
+* trainRouteController.js - Interacts with `trainRouteModel.js` to handle requests related to train route data.
+
+##### Routes:
+* `locationRouters.js,realLocationRouters.js,scheduleRoutes.js,stationRouters.js,trainRouteRouters.js` and `trainRouters.js` are handle requests related to API.
+
+##### View:
+* User interface developed as separate app by using Vue.js
+
