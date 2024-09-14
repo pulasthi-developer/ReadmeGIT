@@ -20,28 +20,10 @@ This project aims to track and display the real-time locations of trains across 
 
 ## System Architecture
 The system follows the MVC (Model-View-Controller) architecture and is built using modern technologies:
-
-##### Models:
-* locationModel.js - Location history data collection(table) model handlings JS file
-* realLocationModel.js - Real-time Location data collection(table) model handlings JS file
-* scheduleModel.js - Train schedule data collection(table) model handlings JS file
-* stationModel.js - Station data collection(table) model handlings JS file
-* trainModel.js - Train data collection(table) model handlings JS file
-* trainRouteModel.js - Train route data collection(table) model handlings JS file
-
-##### Controller:
-* locationController.js - Interacts with `locationModel.js` to handle requests related to location history and real-time location data.
-* realLocationController.js - Interacts with `realLocationModel.js` to handle requests related real-time location data.
-* scheduleController.js - Interacts with `scheduleModel.js` to handle requests related to train schedule data.
-* stationController.js - Interacts with `stationModel.js` to handle requests related to train station data.
-* trainController.js - Interacts with `trainModel.js` to handle requests related to train data.
-* trainRouteController.js - Interacts with `trainRouteModel.js` to handle requests related to train route data.
-
-##### Routes:
-* `locationRouters.js,realLocationRouters.js,scheduleRoutes.js,stationRouters.js,trainRouteRouters.js` and `trainRouters.js` are handle requests related to API.
-
-##### View:
-* User interface developed as separate app by using Vue.js
+* Backend: Node.js with Express.js framework for the REST API.
+* Frontend: A single-page application built using Vue.js.
+* Database: MongoDB for storing train locations, routes, schedules, and user data.
+* IoT Devices: GPS modules installed on train engines, transmitting location data.
 
 
 ## Data Flow
