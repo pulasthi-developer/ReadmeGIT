@@ -20,28 +20,10 @@ This project aims to track and display the real-time locations of trains across 
 
 ## System Architecture
 The system follows the MVC (Model-View-Controller) architecture and is built using modern technologies:
-
-##### Models:
-* locationModel.js - Location history data collection(table) model handlings JS file
-* realLocationModel.js - Real-time Location data collection(table) model handlings JS file
-* scheduleModel.js - Train schedule data collection(table) model handlings JS file
-* stationModel.js - Station data collection(table) model handlings JS file
-* trainModel.js - Train data collection(table) model handlings JS file
-* trainRouteModel.js - Train route data collection(table) model handlings JS file
-
-##### Controller:
-* locationController.js - Interacts with `locationModel.js` to handle requests related to location history and real-time location data.
-* realLocationController.js - Interacts with `realLocationModel.js` to handle requests related real-time location data.
-* scheduleController.js - Interacts with `scheduleModel.js` to handle requests related to train schedule data.
-* stationController.js - Interacts with `stationModel.js` to handle requests related to train station data.
-* trainController.js - Interacts with `trainModel.js` to handle requests related to train data.
-* trainRouteController.js - Interacts with `trainRouteModel.js` to handle requests related to train route data.
-
-##### Routes:
-* `locationRouters.js,realLocationRouters.js,scheduleRoutes.js,stationRouters.js,trainRouteRouters.js` and `trainRouters.js` are handle requests related to API.
-
-##### View:
-* User interface developed as separate app by using Vue.js
+* Backend: Node.js with Express.js framework for the REST API.
+* Frontend: A single-page application built using Vue.js.
+* Database: MongoDB for storing train locations, routes, schedules, and user data.
+* IoT Devices: GPS modules installed on train engines, transmitting location data.
 
 
 ## Data Flow
@@ -52,12 +34,12 @@ The system follows the MVC (Model-View-Controller) architecture and is built usi
 
 ## Data Modals
 
-| **Entity**        | **Attributes**                                                   | **Description**                   |
-|-------------------|------------------------------------------------------------------|-----------------------------------|
-| **Train**         | train_id, train_number, train_name, type                         | Store Train data                  |
-| **Station**       | station_id, station_name, latitude, longitude                    | Store Station data                |
-| **Schedule**      | schedule_id, train_id, route_id, start_time, end_time            | Store Schedule data               |
-| **Train Route**   | route_id, route_name, start_station_id, end_station_id, distance | Store Train Route data            |
-| **Location**      | location_id, train_id, latitude, longitude, time_stamp           | Store Train Location history data |
-| **Real Location** | train_id, latitude, longitude, time_stamp                        | Store Train Real Location data    |
+| **Entity**        | **Attributes**                                                   |
+|-------------------|------------------------------------------------------------------|
+| **Train**         | train_id, train_number, train_name, type                         |
+| **Station**       | station_id, station_name, latitude, longitude                    |
+| **Schedule**      | schedule_id, train_id, route_id, start_time, end_time            |
+| **Train Route**   | route_id, route_name, start_station_id, end_station_id, distance |
+| **Location**      | location_id, train_id, latitude, longitude, time_stamp           |
+| **Real Location** | train_id, latitude, longitude, time_stamp                        |
 
