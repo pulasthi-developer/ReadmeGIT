@@ -49,3 +49,22 @@ We used MVC architecture for this API-based Real-Time Train Tracking System proj
 ##### View:
 * User interface developed as separate app by using Vue.js
 
+## Data Flow
+1.	IoT devices transmit live location data every minute.
+2.	Data transmit through a mobile network to the REST API server.
+3.	The REST API process and stores the data in the database.
+4.	Client application access the data via REST API to display the live locations on map.
+
+## Data Modals
+
+| **Entity** | **Attributes** | **Description** |
+|------|------|------|
+|Train|      |      |
+|Stations|      |      |
+|Location|      |      |
+|Real Location|      |      |
+|Schedule|      |      |
+|Train Route|      |      |
+
+
+
