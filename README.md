@@ -34,3 +34,5 @@ We used MVC architecture for this API-based Real-Time Train Tracking System proj
 * stationModel.js - Station data collection(table) model handlings JS file
 * trainModel.js - Train data collection(table) model handlings JS file
 * trainRouteModel.js - Train route data collection(table) model handlings JS file
+
+##### Controller:
