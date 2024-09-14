@@ -22,27 +22,16 @@ This project aims to track and display the real-time locations of trains across 
 I used MVC architecture for this API-based Real-Time Train Tracking System project. MVC is short for Model, View, and Controller.
 
 ##### Models:
-* locationModel.js - Location history data collection(table) model handlings JS file
-* realLocationModel.js - Real-time Location data collection(table) model handlings JS file
-* scheduleModel.js - Train schedule data collection(table) model handlings JS file
-* stationModel.js - Station data collection(table) model handlings JS file
-* trainModel.js - Train data collection(table) model handlings JS file
-* trainRouteModel.js - Train route data collection(table) model handlings JS file
+* Data Tables (Collections) handlings layer
 
 ##### Controller:
-* locationController.js - Interacts with `locationModel.js` to handle requests related to location history and real-time location data.
-* realLocationController.js - Interacts with `realLocationModel.js` to handle requests related real-time location data.
-* scheduleController.js - Interacts with `scheduleModel.js` to handle requests related to train schedule data.
-* stationController.js - Interacts with `stationModel.js` to handle requests related to train station data.
-* trainController.js - Interacts with `trainModel.js` to handle requests related to train data.
-* trainRouteController.js - Interacts with `trainRouteModel.js` to handle requests related to train route data.
+* Interacts and handle requests related to Models and Routes.
 
 ##### Routes:
-* `locationRouters.js,realLocationRouters.js,scheduleRoutes.js,stationRouters.js,trainRouteRouters.js` and `trainRouters.js` are handle requests related to API.
+* Handle requests related to API.
 
 ##### View:
-* User interface developed as separate app by using Vue.js
-
+* User interface developed as separate app by using Vue.js. Get data from API and request data from API
 
 ## Data Flow
 1.	IoT devices transmit live location data every minute.
