@@ -57,14 +57,12 @@ We used MVC architecture for this API-based Real-Time Train Tracking System proj
 
 ## Data Modals
 
-| **Entity** | **Attributes** | **Description** |
-|------|------|------|
-|Train|      |      |
-|Stations|      |      |
-|Location|      |      |
-|Real Location|      |      |
-|Schedule|      |      |
-|Train Route|      |      |
-
-
+| **Entity**        | **Attributes**                                                   | **Description**                   |
+|-------------------|------------------------------------------------------------------|-----------------------------------|
+| **Train**         | train_id, train_number, train_name, type                         | Store Train data                  |
+| **Station**       | station_id, station_name, latitude, longitude                    | Store Station data                |
+| **Schedule**      | schedule_id, train_id, route_id, start_time, end_time            | Store Schedule data               |
+| **Train Route**   | route_id, route_name, start_station_id, end_station_id, distance | Store Train Route data            |
+| **Location**      | location_id, train_id, latitude, longitude, time_stamp           | Store Train Location history data |
+| **Real Location** | train_id, latitude, longitude, time_stamp                        | Store Train Real Location data    |
 
