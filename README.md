@@ -56,13 +56,13 @@ I used MVC architecture for this API-based Real-Time Train Tracking System proje
 
 | **Model**     | **Route**                 | **Method** | **Description**                             |
 |:-------------:|:-------------------------:|:----------:|:-------------------------------------------:|
-| Train         | /trains                   | GET        | Get all Trains                              |
-| Route         | /train-routes             | GET        | Get all Routes                              |
-| Station       | /stations                 | GET        | Get all Stations                            |
-| Schedule      | /schedules                | GET        | Get all Schedules                           |
-| Real-Location | /real-location/{train_id} | GET        | Get Real Location data of specific Train    |
+| **Train**         | /trains                   | GET        | Get all Trains                              |
+| **Route**         | /train-routes             | GET        | Get all Routes                              |
+| **Station**       | /stations                 | GET        | Get all Stations                            |
+| **Schedule**      | /schedules                | GET        | Get all Schedules                           |
+| **Real-Location** | /real-location/{train_id} | GET        | Get Real Location data of specific Train    |
 |               | /save-real-location       | POST       | Update Real Location data of specific Train |
-| Location      | /locations                | GET        | Get all Location history                    |
+| **Location**      | /locations                | GET        | Get all Location history                    |
 |               | /save-location            | POST       | Save Location data to history               |
 
 
