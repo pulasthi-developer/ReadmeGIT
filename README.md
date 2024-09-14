@@ -54,10 +54,10 @@ I used MVC architecture for this API-based Real-Time Train Tracking System proje
 
 | **Entity**        | **Attributes**                                                   |
 |-------------------|------------------------------------------------------------------|
-| **Train**         | train_id, train_number, train_name, type                         |
-| **Station**       | station_id, station_name, latitude, longitude                    |
-| **Schedule**      | schedule_id, train_id, route_id, start_time, end_time            |
-| **Train Route**   | route_id, route_name, start_station_id, end_station_id, distance |
-| **Location**      | location_id, train_id, latitude, longitude, time_stamp           |
-| **Real Location** | train_id, latitude, longitude, time_stamp                        |
+| **Train**         | **train_id**, train_number, train_name, type                         |
+| **Station**       | **station_id**, station_name, latitude, longitude                    |
+| **Schedule**      | **schedule_id**, train_id, route_id, start_time, end_time            |
+| **Train Route**   | **route_id**, route_name, start_station_id, end_station_id, distance |
+| **Location**      | **location_id**, train_id, latitude, longitude, time_stamp           |
+| **Real Location** | **train_id**, latitude, longitude, time_stamp                        |
 
