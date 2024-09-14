@@ -22,7 +22,7 @@ This project aims to track and display the real-time locations of trains across 
 I used MVC architecture for this API-based Real-Time Train Tracking System project. MVC is short for Model, View, and Controller.
 
 ##### Models:
-* Data Tables (Collections) handlings layer
+* Data Tables (Collections) handlings layer.
 
 ##### Controller:
 * Interacts and handle requests related to Models and Routes.
@@ -31,7 +31,7 @@ I used MVC architecture for this API-based Real-Time Train Tracking System proje
 * Handle requests related to API.
 
 ##### View:
-* User interface developed as separate app by using Vue.js. Get data from API and request data from API
+* User interface developed as separate app by using Vue.js. Get data from API and request data from API.
 
 ## Data Flow
 1.	IoT devices transmit live location data every minute.
@@ -59,18 +59,23 @@ pending
 ## Tech Stack
 
 **1. Frontend Technologies**
-- Vue.js - Front End JavaScript framework
-- HTML5 - Markup language used for structuring web page
-- CSS3 - Style sheet language used for styling of a HTML document
-- Bootstrap - CSS framework
-- JavaScript (ES6+) - Client side scripting language
-- Leaflet JavaScript Plugin - Generate the Map
+- Vue.js - Front End JavaScript framework.
+- HTML5 - Markup language used for structuring web page.
+- CSS3 - Style sheet language used for styling of a HTML document.
+- Bootstrap - CSS framework.
+- JavaScript (ES6+) - Client side scripting language.
+- Leaflet JavaScript Plugin - Use for Generate the Map.
 
 **2. Backend Technologies (RESTful API Technologies)**
-- Node.js - Uses JavaScript on the server
-- Express.js - Web application framework for developing RESTful APIs
-- Mongoose - JavaScript library that establishes a link between Node.js and MongoDB
+- Node.js - Uses JavaScript on the server.
+- Express.js - Web application framework for developing RESTful APIs.
+- Mongoose - JavaScript library that establishes a link between Node.js and MongoDB.
 
 **3. Database Technologies**
-- MongoDB -  Document-oriented database program (NoSQL)
+- MongoDB -  Document-oriented database program (NoSQL).
 
+## Deployment
+
+- AWS EC2 (Amazon Elastic Compute Cloud) - Host backend on this server.
+
+- AWS Amplify - Host frontend on this server.
