@@ -23,8 +23,6 @@ The system follows the MVC (Model-View-Controller) architecture and is built usi
 * Backend: Node.js with Express.js framework for the REST API.
 * Frontend: A single-page application built using Vue.js.
 * Database: MongoDB for storing train locations, routes, schedules, and user data.
-* IoT Devices: GPS modules installed on train engines, transmitting location data.
-
 
 ## Data Flow
 1.	IoT devices transmit live location data every minute.
@@ -34,12 +32,12 @@ The system follows the MVC (Model-View-Controller) architecture and is built usi
 
 ## Data Modals
 
-| **Entity**        | **Attributes**                                                   | **Description**                   |
-|-------------------|------------------------------------------------------------------|-----------------------------------|
-| **Train**         | train_id, train_number, train_name, type                         | Store Train data                  |
-| **Station**       | station_id, station_name, latitude, longitude                    | Store Station data                |
-| **Schedule**      | schedule_id, train_id, route_id, start_time, end_time            | Store Schedule data               |
-| **Train Route**   | route_id, route_name, start_station_id, end_station_id, distance | Store Train Route data            |
-| **Location**      | location_id, train_id, latitude, longitude, time_stamp           | Store Train Location history data |
-| **Real Location** | train_id, latitude, longitude, time_stamp                        | Store Train Real Location data    |
+| **Entity**        | **Attributes**                                                   |
+|-------------------|------------------------------------------------------------------|
+| **Train**         | train_id, train_number, train_name, type                         |
+| **Station**       | station_id, station_name, latitude, longitude                    |
+| **Schedule**      | schedule_id, train_id, route_id, start_time, end_time            |
+| **Train Route**   | route_id, route_name, start_station_id, end_station_id, distance |
+| **Location**      | location_id, train_id, latitude, longitude, time_stamp           |
+| **Real Location** | train_id, latitude, longitude, time_stamp                        |
 
