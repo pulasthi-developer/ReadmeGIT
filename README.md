@@ -50,3 +50,27 @@ I used MVC architecture for this API-based Real-Time Train Tracking System proje
 | **Location**      | **'location_id'**, train_id, latitude, longitude, time_stamp           |
 | **Real Location** | **'train_id'**, latitude, longitude, time_stamp                        |
 
+## API Design
+
+### RESTful API End Points
+
+pending
+
+## Tech Stack
+
+**1. Frontend Technologies**
+- Vue.js - Front End JavaScript framework
+- HTML5 - Markup language used for structuring web page
+- CSS3 - Style sheet language used for styling of a HTML document
+- Bootstrap - CSS framework
+- JavaScript (ES6+) - Client side scripting language
+- Leaflet JavaScript Plugin - Generate the Map
+
+**2. Backend Technologies (RESTful API Technologies)**
+- Node.js - Uses JavaScript on the server
+- Express.js - Web application framework for developing RESTful APIs
+- Mongoose - JavaScript library that establishes a link between Node.js and MongoDB
+
+**3. Database Technologies**
+- MongoDB -  Document-oriented database program (NoSQL)
+
