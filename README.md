@@ -86,6 +86,6 @@ I used MVC architecture for this API-based Real-Time Train Tracking System proje
 
 ## Deployment
 
-- AWS EC2 (Amazon Elastic Compute Cloud) - Host backend on this server.
+- AWS EC2 (Amazon Elastic Compute Cloud) - Host backend on this server.  - http://ec2-34-238-252-143.compute-1.amazonaws.com/
 
-- AWS Amplify - Host frontend on this server.
+- AWS Amplify - Host frontend on this server. - https://main.d308x1hghj9xh0.amplifyapp.com
